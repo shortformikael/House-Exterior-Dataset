@@ -1,1 +1,1 @@
-# Synthetic Image Classifier
+# House Exterior Dataset
