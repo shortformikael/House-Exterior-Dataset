@@ -1,4 +1,3 @@
-import os
 import pathlib
 import json
 
@@ -28,6 +27,7 @@ def appendToArray(dirPath, label):
             var = var + 1
 
 # Start Script
+print("Indexing Start")
 
 for entry in datasetPath.iterdir():
     if("Ai" in entry.name):
@@ -37,3 +37,6 @@ for entry in datasetPath.iterdir():
 
 #print(str(datasetPath) + "\index.json")
 json.dump(objectList, open(str(datasetPath) + "\index.json", "w"), indent=4, separators=(',',': '))
+
+print("Indexing Finished")
+print("Items Indexed: " + str(var))
